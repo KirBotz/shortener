@@ -3,8 +3,8 @@ const express = require("express"),
     cors = require("cors"),
     cookieParser = require("cookie-parser"),
     bodyParser = require("body-parser"),
-    database = require("./db/mongo"),
-    db = database.get("short-url");
+    debe = require("./db/mongo"),
+    db = debe.get("short-url");
 
 const app = express()
 const port = process.env.PORT || 8000
